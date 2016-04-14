@@ -1,0 +1,13 @@
+{
+  "name": "CoreDataDebugger",
+  "version": "0.0.1",
+  "authors": "wooo",
+  "summary": "A short description of Wowoijewfoijwe.",
+  "homepage": "www.woo.com",
+  "source": {
+    "path": "https://github.com/richmondwatkins/CoreDataDebugger",
+    "tag": "0.0.1"
+  },
+  "source_files": "CoreDataDebugger/**/*.{swift}",
+  "resources": "CoreDataDebugger/**/*.{png,jpeg,jpg,storyboard,xib,lproj,xcdatamodeld,plist,xcassets}"
+}

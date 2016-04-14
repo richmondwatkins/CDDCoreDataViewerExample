@@ -1,0 +1,19 @@
+PODS:
+  - CoreDataDebugger (0.0.1)
+
+DEPENDENCIES:
+  - CoreDataDebugger (from `https://github.com/richmondwatkins/CoreDataDebugger`)
+
+EXTERNAL SOURCES:
+  CoreDataDebugger:
+    :git: https://github.com/richmondwatkins/CoreDataDebugger
+
+CHECKOUT OPTIONS:
+  CoreDataDebugger:
+    :commit: 0dc4465ecce564cd871247d46943d4ddc9241b19
+    :git: https://github.com/richmondwatkins/CoreDataDebugger
+
+SPEC CHECKSUMS:
+  CoreDataDebugger: cca2588ce021b23415a6186d15ef668effdffca1
+
+COCOAPODS: 0.39.0

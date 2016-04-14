@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import CoreDataDebugger
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        let entity: NSEntityDescription = NSEntityDescription.entityForName("TestOne", inManagedObjectContext: self.managedObjectContext)!
+        
+        let testOne: TestOne = NSManagedObject(entity: entity, insertIntoManagedObjectContext: self.managedObjectContext) as! TestOne
+        
+        testOne.fieldOne = "WOOO"
+        testOne.fieldTwo = NSNumber(integer: 20);
+        
+        try! self.managedObjectContext.save()
+        
+        CoreDataDebugger.initialize(self.managedObjectContext)
+        
         return true
     }
 

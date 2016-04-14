@@ -1,0 +1,6 @@
+framework module CoreDataDebugger {
+  umbrella header "CoreDataDebugger-umbrella.h"
+
+  export *
+  module * { export * }
+}
